@@ -18,184 +18,185 @@
   <script src="theme.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap site-header__inner">
       <a class="wordmark" href="#top">Fernando Colombo</a>
-      <nav aria-label="Main navigation">
+      <nav aria-label="Main navigation" data-i18n-label="navLabel">
         <ul class="site-nav">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <button class="theme-toggle" type="button" hidden>
-              <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-              <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-            </button>
-          </li>
+          <li><a href="#work" data-i18n="work">Work</a></li>
+          <li><a href="#experience" data-i18n="experience">Experience</a></li>
+          <li><a href="#skills" data-i18n="skills">Skills</a></li>
+          <li><a href="#contact" data-i18n="contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="site-tools">
+        <button class="header-button lang-toggle" type="button" hidden></button>
+        <button class="header-button theme-toggle" type="button" hidden>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="hero wrap" id="top" aria-labelledby="hero-title">
       <div class="hero__text">
-        <p class="label">Computer science student &amp; developer</p>
+        <p class="label" data-i18n="role">Computer science student &amp; developer</p>
         <h1 id="hero-title">Fernando José Colombo Rivera</h1>
-        <p class="lead">I'm a computer science student from Puerto Rico, minoring in cybersecurity. I build web and mobile apps and APIs, and I'm growing FlowTech, a technology studio for apps, websites, and games.</p>
+        <p class="lead" data-i18n="lead">I'm a computer science student from Puerto Rico, minoring in cybersecurity. I build web and mobile apps and APIs, and I'm growing FlowTech, a technology studio for apps, websites, and games.</p>
         <div class="hero__actions">
-          <a class="button" href="#work">View my work</a>
+          <a class="button" href="#work" data-i18n="viewWork">View my work</a>
           <a class="button button--ghost" href="Work%20Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
         </div>
       </div>
       <div class="portrait">
-        <img src="IMAGES/Ferr%203.0.jpg" width="844" height="1500" alt="Portrait of Fernando José Colombo Rivera" />
+        <img src="IMAGES/Ferr%203.0.jpg" width="844" height="1500" alt="Portrait of Fernando José Colombo Rivera" data-i18n-alt="portraitAlt" />
       </div>
     </section>
 
-    <section class="wrap facts" aria-label="At a glance">
+    <section class="wrap facts" aria-label="At a glance" data-i18n-label="factsLabel">
       <dl class="facts__list">
-        <div><dt>Based in</dt><dd>Puerto Rico, USA</dd></div>
-        <div><dt>Studying</dt><dd>BBA in Computer Science, Cybersecurity Minor</dd></div>
-        <div><dt>Languages</dt><dd>English and Spanish</dd></div>
-        <div><dt>Status</dt><dd>Open to opportunities and team projects</dd></div>
+        <div><dt data-i18n="basedIn">Based in</dt><dd data-i18n="basedInValue">Puerto Rico, USA</dd></div>
+        <div><dt data-i18n="studying">Studying</dt><dd data-i18n="studyingValue">BBA in Computer Science, Cybersecurity Minor</dd></div>
+        <div><dt data-i18n="languages">Languages</dt><dd data-i18n="languagesValue">English and Spanish</dd></div>
+        <div><dt data-i18n="status">Status</dt><dd data-i18n="statusValue">Open to opportunities and team projects</dd></div>
       </dl>
     </section>
 
     <section class="section wrap" id="work" aria-labelledby="work-title">
-      <h2 class="label section__title" id="work-title">Selected work</h2>
+      <h2 class="label section__title" id="work-title" data-i18n="selectedWork">Selected work</h2>
 
       <ol class="projects">
         <li class="project">
-          <p class="project__type">Website</p>
+          <p class="project__type" data-i18n="typeWebsite">Website</p>
           <div>
             <h3>FlowTech</h3>
-            <p>The official site for FlowTech. Bilingual and responsive, built without frameworks, with a contact form that sends email through a serverless function.</p>
+            <p data-i18n="flowtechDesc">The official site for FlowTech. Bilingual and responsive, built without frameworks, with a contact form that sends email through a serverless function.</p>
             <p class="project__stack">HTML · CSS · JavaScript · Vercel · Resend</p>
           </div>
           <ul class="project__links">
-            <li><a href="https://flowtech-jet.vercel.app">Live site</a></li>
-            <li><a href="https://github.com/Ferr220/flowtech">Code</a></li>
+            <li><a href="https://flowtech-jet.vercel.app" data-i18n="liveSite">Live site</a></li>
+            <li><a href="https://github.com/Ferr220/flowtech" data-i18n="code">Code</a></li>
           </ul>
         </li>
 
         <li class="project">
-          <p class="project__type">Mobile app</p>
+          <p class="project__type" data-i18n="typeMobile">Mobile app</p>
           <div>
-            <h3>Contact Book</h3>
-            <p>An offline-first contacts app. Every change saves to a local database right away and joins a sync queue, with an adapter ready to connect to an external API.</p>
+            <h3 data-i18n="contactBookTitle">Contact Book</h3>
+            <p data-i18n="contactBookDesc">An offline-first contacts app. Every change saves to a local database right away and joins a sync queue, with an adapter ready to connect to an external API.</p>
             <p class="project__stack">React Native · JavaScript · Realm</p>
           </div>
           <ul class="project__links">
-            <li><a href="https://github.com/Ferr220/ContactBook">Code</a></li>
+            <li><a href="https://github.com/Ferr220/ContactBook" data-i18n="code">Code</a></li>
           </ul>
         </li>
 
         <li class="project">
           <p class="project__type">Full stack</p>
           <div>
-            <h3>Simple Movie Database</h3>
-            <p>A movie catalog with a paginated REST API and a separate JavaScript web client that consumes it.</p>
+            <h3 data-i18n="movieDbTitle">Simple Movie Database</h3>
+            <p data-i18n="movieDbDesc">A movie catalog with a paginated REST API and a separate JavaScript web client that consumes it.</p>
             <p class="project__stack">C# · .NET · JavaScript · HTML · CSS</p>
           </div>
           <ul class="project__links">
-            <li><a href="https://github.com/Ferr220/SimpleMovieDatabase">Code</a></li>
+            <li><a href="https://github.com/Ferr220/SimpleMovieDatabase" data-i18n="code">Code</a></li>
           </ul>
         </li>
 
         <li class="project">
-          <p class="project__type">Computer vision</p>
+          <p class="project__type" data-i18n="typeVision">Computer vision</p>
           <div>
             <h3>Meme Gesture</h3>
-            <p>A webcam experiment that tracks one hand in real time and identifies gestures from the position of the fingers.</p>
+            <p data-i18n="memeGestureDesc">A webcam experiment that tracks one hand in real time and identifies gestures from the position of the fingers.</p>
             <p class="project__stack">Python · OpenCV · MediaPipe</p>
           </div>
           <ul class="project__links">
-            <li><a href="https://github.com/Ferr220/Meme_Gesture">Code</a></li>
+            <li><a href="https://github.com/Ferr220/Meme_Gesture" data-i18n="code">Code</a></li>
           </ul>
         </li>
 
         <li class="project">
-          <p class="project__type">Console app</p>
+          <p class="project__type" data-i18n="typeConsole">Console app</p>
           <div>
             <h3>ZenBot</h3>
-            <p>A rule-based chatbot that matches keywords to detect what you're asking, then answers with the time, the date, a joke, or a bit of conversation.</p>
+            <p data-i18n="zenbotDesc">A rule-based chatbot that matches keywords to detect what you're asking, then answers with the time, the date, a joke, or a bit of conversation.</p>
             <p class="project__stack">Python</p>
           </div>
           <ul class="project__links">
-            <li><a href="https://github.com/Ferr220/Chatbot">Code</a></li>
+            <li><a href="https://github.com/Ferr220/Chatbot" data-i18n="code">Code</a></li>
           </ul>
         </li>
       </ol>
 
-      <p class="section__more"><a href="https://github.com/Ferr220?tab=repositories">All repositories on GitHub</a></p>
+      <p class="section__more"><a href="https://github.com/Ferr220?tab=repositories" data-i18n="allRepos">All repositories on GitHub</a></p>
     </section>
 
-    <section class="section wrap two-col" id="experience" aria-label="Experience and education">
+    <section class="section wrap two-col" id="experience" aria-label="Experience and education" data-i18n-label="twoColLabel">
       <div>
-        <h2 class="label section__title">Experience</h2>
+        <h2 class="label section__title" data-i18n="experience">Experience</h2>
         <ul class="timeline">
           <li>
-            <p class="timeline__date">December 2025 – Present</p>
+            <p class="timeline__date" data-i18n="dateLids">December 2025 – Present</p>
             <h3>Lids, Plaza del Sol</h3>
-            <p>Salesman and customer service, Bayamón</p>
+            <p data-i18n="salesRole">Salesman and customer service, Bayamón</p>
           </li>
           <li>
-            <p class="timeline__date">August 2025 – October 2025</p>
+            <p class="timeline__date" data-i18n="dateAlmacenes">August 2025 – October 2025</p>
             <h3>Almacenes Plaza Rexville</h3>
-            <p>Salesman and customer service, Bayamón</p>
+            <p data-i18n="salesRole">Salesman and customer service, Bayamón</p>
           </li>
           <li>
-            <p class="timeline__date">August 2023 – 2024</p>
-            <h3>Interamerican University, Barranquitas Campus</h3>
-            <p>Study and work program, customer service and support</p>
+            <p class="timeline__date" data-i18n="dateBarranquitas">August 2023 – 2024</p>
+            <h3 data-i18n="interBarranquitas">Interamerican University, Barranquitas Campus</h3>
+            <p data-i18n="studyWork">Study and work program, customer service and support</p>
           </li>
         </ul>
       </div>
 
       <div>
-        <h2 class="label section__title">Education</h2>
+        <h2 class="label section__title" data-i18n="education">Education</h2>
         <ul class="timeline">
           <li>
-            <p class="timeline__date">August 2024 – Present</p>
-            <h3>Interamerican University of Puerto Rico, Bayamón Campus</h3>
-            <p>BBA in Computer Science, Cybersecurity Minor</p>
+            <p class="timeline__date" data-i18n="dateBayamon">August 2024 – Present</p>
+            <h3 data-i18n="interBayamonFull">Interamerican University of Puerto Rico, Bayamón Campus</h3>
+            <p data-i18n="degreeMinor">BBA in Computer Science, Cybersecurity Minor</p>
           </li>
           <li>
-            <p class="timeline__date">August 2023 – 2024</p>
-            <h3>Interamerican University of Puerto Rico, Barranquitas Campus</h3>
-            <p>BBA in Computer Science</p>
+            <p class="timeline__date" data-i18n="dateBarranquitas">August 2023 – 2024</p>
+            <h3 data-i18n="interBarranquitasFull">Interamerican University of Puerto Rico, Barranquitas Campus</h3>
+            <p data-i18n="degree">BBA in Computer Science</p>
           </li>
           <li>
-            <p class="timeline__date">Student organization</p>
+            <p class="timeline__date" data-i18n="studentOrg">Student organization</p>
             <h3>INFOTECH</h3>
-            <p>Networking, opportunities, and computer-based competitions for computer science students</p>
+            <p data-i18n="infotechDesc">Networking, opportunities, and computer-based competitions for computer science students</p>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="section wrap" id="skills" aria-labelledby="skills-title">
-      <h2 class="label section__title" id="skills-title">Skills</h2>
+      <h2 class="label section__title" id="skills-title" data-i18n="skills">Skills</h2>
       <dl class="skills">
         <div>
-          <dt>Languages</dt>
+          <dt data-i18n="skillLanguages">Languages</dt>
           <dd>Python, C++, C#, JavaScript, Dart, HTML, CSS</dd>
         </div>
         <div>
-          <dt>Frameworks &amp; tools</dt>
+          <dt data-i18n="skillTools">Frameworks &amp; tools</dt>
           <dd>React Native, Flutter, .NET, Realm, OpenCV, MediaPipe, Git, GitHub, Vercel</dd>
         </div>
         <div>
-          <dt>Operating systems</dt>
+          <dt data-i18n="skillOs">Operating systems</dt>
           <dd>Linux, Windows, macOS</dd>
         </div>
         <div>
-          <dt>Professional</dt>
-          <dd>Leadership, communication, problem-solving, creativity, responsibility</dd>
+          <dt data-i18n="skillProfessional">Professional</dt>
+          <dd data-i18n="skillProfessionalValue">Leadership, communication, problem-solving, creativity, responsibility</dd>
         </div>
       </dl>
     </section>
@@ -203,8 +204,8 @@
 
   <footer class="contact" id="contact">
     <div class="wrap">
-      <h2 class="label contact__label">Contact</h2>
-      <p class="contact__heading">Have a role or a project in mind? Let's talk.</p>
+      <h2 class="label contact__label" data-i18n="contact">Contact</h2>
+      <p class="contact__heading" data-i18n="contactHeading">Have a role or a project in mind? Let's talk.</p>
       <a class="contact__email" href="mailto:colomboriverafernandojose22@gmail.com">colomboriverafernandojose22@gmail.com</a>
       <ul class="contact__links">
         <li><a href="tel:+19392463434">+1 (939) 246-3434</a></li>
@@ -215,5 +216,7 @@
       <p class="contact__legal">© 2026 Fernando José Colombo Rivera</p>
     </div>
   </footer>
+
+  <script src="i18n.js"></script>
 </body>
 </html>

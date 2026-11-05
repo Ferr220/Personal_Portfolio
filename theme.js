@@ -31,7 +31,10 @@
     var meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute("content", COLORS[theme]);
     if (button) {
-      var label = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+      var labels = root.lang === "es"
+        ? { dark: "Cambiar a modo claro", light: "Cambiar a modo oscuro" }
+        : { dark: "Switch to light mode", light: "Switch to dark mode" };
+      var label = labels[theme];
       button.setAttribute("aria-label", label);
       button.title = label;
     }
@@ -43,6 +46,9 @@
     var button = document.querySelector(".theme-toggle");
     if (!button) return;
     apply(root.getAttribute("data-theme"), button);
+    document.addEventListener("langchange", function () {
+      apply(root.getAttribute("data-theme"), button);
+    });
     button.hidden = false;
     button.addEventListener("click", function () {
       var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
