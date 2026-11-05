@@ -7,10 +7,10 @@ Personal portfolio website for Fernando Jose Colombo Rivera.
 This project is a clean, single-page portfolio built with HTML and CSS to showcase:
 
 - Personal profile and introduction
-- Contact links (socials, email, phone)
+- Selected projects with live and source links
+- Experience, education, and skills
 - Resume access
-- Recent work, records, and certificates sections
-- GitHub repositories and FlowTech links
+- Contact details, GitHub, and FlowTech links
 
 ## Tech Stack
 

@@ -3,97 +3,210 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Personal Portfolio - Fernando Jose Colombo Rivera</title>
+  <title>Fernando José Colombo Rivera | Computer Science Student &amp; Developer</title>
+  <meta name="description" content="Computer science student and developer from Puerto Rico, minoring in cybersecurity. Web and mobile projects, experience, and contact details." />
+  <meta property="og:title" content="Fernando José Colombo Rivera" />
+  <meta property="og:description" content="Computer science student and developer from Puerto Rico, minoring in cybersecurity." />
+  <meta property="og:type" content="profile" />
+  <meta name="theme-color" content="#0b35f5" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b35f5'/%3E%3Cpath d='M10 7h13v4h-9v4h8v4h-8v7h-4z' fill='%23fff'/%3E%3C/svg%3E" />
 
-  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container" role="main">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#">
-        <div class="logo">F</div>
-        <div>
-          <div style="font-weight:700">Flow Tech</div>
-          <div style="font-size:12px;color:var(--muted);margin-top:2px">Tech • Developing</div>
-        </div>
-      </a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-      <div class="nav-links" aria-hidden="false">
-        <a href="https://linktr.ee/fernandojcr7">Socials</a>
-        <a href="mailto:colomboriverafernandojose22@gmail.com">Email</a>
-        <a href="tel:+19392463434">Number</a>
-      </div>
-    </nav>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="#top">Fernando Colombo</a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero" aria-labelledby="hero-title">
-      <div>
-        <div class="eyebrow">Presenting...</div>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <p class="label">Computer science student &amp; developer</p>
         <h1 id="hero-title">Fernando José Colombo Rivera</h1>
-        <p class="lead">Currently 20 years old and a passionate computer science student from Puerto Rico at the Interamerican University of Bayamon. Always hungry to learn more and grow on every project I work on. Proficient in languages like HTML, CSS, Python & C++. Looking forward to working on more projects and expanding my skills, open to working with people, companies, big & small teams. I'm a quick learner and team leader.</p>
+        <p class="lead">I'm a computer science student from Puerto Rico, minoring in cybersecurity. I build web and mobile apps and APIs, and I'm growing FlowTech, a technology studio for apps, websites, and games.</p>
+        <div class="hero__actions">
+          <a class="button" href="#work">View my work</a>
+          <a class="button button--ghost" href="Work%20Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="IMAGES/Ferr%203.0.jpg" width="844" height="1500" alt="Portrait of Fernando José Colombo Rivera" />
+      </div>
+    </section>
+
+    <section class="wrap facts" aria-label="At a glance">
+      <dl class="facts__list">
+        <div><dt>Based in</dt><dd>Puerto Rico, USA</dd></div>
+        <div><dt>Studying</dt><dd>BBA in Computer Science, Cybersecurity Minor</dd></div>
+        <div><dt>Languages</dt><dd>English and Spanish</dd></div>
+        <div><dt>Status</dt><dd>Open to opportunities and team projects</dd></div>
+      </dl>
+    </section>
+
+    <section class="section wrap" id="work" aria-labelledby="work-title">
+      <h2 class="label section__title" id="work-title">Selected work</h2>
+
+      <ol class="projects">
+        <li class="project">
+          <p class="project__type">Website</p>
+          <div>
+            <h3>FlowTech</h3>
+            <p>The official site for FlowTech. Bilingual and responsive, built without frameworks, with a contact form that sends email through a serverless function.</p>
+            <p class="project__stack">HTML · CSS · JavaScript · Vercel · Resend</p>
+          </div>
+          <ul class="project__links">
+            <li><a href="https://flowtech-jet.vercel.app">Live site</a></li>
+            <li><a href="https://github.com/Ferr220/flowtech">Code</a></li>
+          </ul>
+        </li>
+
+        <li class="project">
+          <p class="project__type">Mobile app</p>
+          <div>
+            <h3>Contact Book</h3>
+            <p>An offline-first contacts app. Every change saves to a local database right away and joins a sync queue, with an adapter ready to connect to an external API.</p>
+            <p class="project__stack">React Native · JavaScript · Realm</p>
+          </div>
+          <ul class="project__links">
+            <li><a href="https://github.com/Ferr220/ContactBook">Code</a></li>
+          </ul>
+        </li>
+
+        <li class="project">
+          <p class="project__type">Full stack</p>
+          <div>
+            <h3>Simple Movie Database</h3>
+            <p>A movie catalog with a paginated REST API and a separate JavaScript web client that consumes it.</p>
+            <p class="project__stack">C# · .NET · JavaScript · HTML · CSS</p>
+          </div>
+          <ul class="project__links">
+            <li><a href="https://github.com/Ferr220/SimpleMovieDatabase">Code</a></li>
+          </ul>
+        </li>
+
+        <li class="project">
+          <p class="project__type">Computer vision</p>
+          <div>
+            <h3>Meme Gesture</h3>
+            <p>A webcam experiment that tracks one hand in real time and identifies gestures from the position of the fingers.</p>
+            <p class="project__stack">Python · OpenCV · MediaPipe</p>
+          </div>
+          <ul class="project__links">
+            <li><a href="https://github.com/Ferr220/Meme_Gesture">Code</a></li>
+          </ul>
+        </li>
+
+        <li class="project">
+          <p class="project__type">Console app</p>
+          <div>
+            <h3>ZenBot</h3>
+            <p>A rule-based chatbot that matches keywords to detect what you're asking, then answers with the time, the date, a joke, or a bit of conversation.</p>
+            <p class="project__stack">Python</p>
+          </div>
+          <ul class="project__links">
+            <li><a href="https://github.com/Ferr220/Chatbot">Code</a></li>
+          </ul>
+        </li>
+      </ol>
+
+      <p class="section__more"><a href="https://github.com/Ferr220?tab=repositories">All repositories on GitHub</a></p>
+    </section>
+
+    <section class="section wrap two-col" id="experience" aria-label="Experience and education">
+      <div>
+        <h2 class="label section__title">Experience</h2>
+        <ul class="timeline">
+          <li>
+            <p class="timeline__date">December 2025 – Present</p>
+            <h3>Lids, Plaza del Sol</h3>
+            <p>Salesman and customer service, Bayamón</p>
+          </li>
+          <li>
+            <p class="timeline__date">August 2025 – October 2025</p>
+            <h3>Almacenes Plaza Rexville</h3>
+            <p>Salesman and customer service, Bayamón</p>
+          </li>
+          <li>
+            <p class="timeline__date">August 2023 – 2024</p>
+            <h3>Interamerican University, Barranquitas Campus</h3>
+            <p>Study and work program, customer service and support</p>
+          </li>
+        </ul>
       </div>
 
-      <aside class="card" aria-label="Product preview">
-        <div class="product-media" aria-hidden="false">
-          <!-- Foto de perfil -->
-          <img src="IMAGES/Ferr 2.0.jpeg" alt="Fernando Jose Colombo Rivera" />
-        </div>
-
-        <div class="specs" role="group" aria-label="Product specs">
-          <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px">
-            <div>
-              <div style="font-weight:700;font-size:18px">Computer Programer</div>
-              <div class="small">From Puerto Rico, USA </div>
-            </div>
-            <div style="text-align:right">
-              <div style="font-weight:700;font-size:18px">Salary:</div>
-              <div class="small">100,000</div>
-            </div>
-          </div>
-
-          <div style="display:flex;gap:10px;">
-            <a class="cta" href="#" style="flex:1">Hire now</a>
-            <a class="button-secondary" href="#" style="flex:1">Learn More</a>
-          </div>
-        </div>
-      </aside>
+      <div>
+        <h2 class="label section__title">Education</h2>
+        <ul class="timeline">
+          <li>
+            <p class="timeline__date">August 2024 – Present</p>
+            <h3>Interamerican University of Puerto Rico, Bayamón Campus</h3>
+            <p>BBA in Computer Science, Cybersecurity Minor</p>
+          </li>
+          <li>
+            <p class="timeline__date">August 2023 – 2024</p>
+            <h3>Interamerican University of Puerto Rico, Barranquitas Campus</h3>
+            <p>BBA in Computer Science</p>
+          </li>
+          <li>
+            <p class="timeline__date">Student organization</p>
+            <h3>INFOTECH</h3>
+            <p>Networking, opportunities, and computer-based competitions for computer science students</p>
+          </li>
+        </ul>
+      </div>
     </section>
-  
-<section class="features" aria-label="Key features">
-  <a href="/Work Resume.pdf" class="feature-button">
-    <h3>Resume</h3>
-    <p>Take a look at my official work resume.</p>
-  </a>
 
-  <a href="#" class="feature-button">
-    <h3>Recent Works</h3>
-    <p>Get a sneak peek at some of my recent works.</p>
-  </a>
+    <section class="section wrap" id="skills" aria-labelledby="skills-title">
+      <h2 class="label section__title" id="skills-title">Skills</h2>
+      <dl class="skills">
+        <div>
+          <dt>Languages</dt>
+          <dd>Python, C++, C#, JavaScript, Dart, HTML, CSS</dd>
+        </div>
+        <div>
+          <dt>Frameworks &amp; tools</dt>
+          <dd>React Native, Flutter, .NET, Realm, OpenCV, MediaPipe, Git, GitHub, Vercel</dd>
+        </div>
+        <div>
+          <dt>Operating systems</dt>
+          <dd>Linux, Windows, macOS</dd>
+        </div>
+        <div>
+          <dt>Professional</dt>
+          <dd>Leadership, communication, problem-solving, creativity, responsibility</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
 
-  <a href="#" class="feature-button">
-    <h3>Records</h3>
-    <p>Some of my records and progress as a computer programmer over the years.</p>
-  </a>
-
-  <a href="#" class="feature-button">
-    <h3>Certificates</h3>
-    <p>Take a look at some of the certificates I own.</p>
-  </a>
-
-  <a href="https://www.instagram.com/flowtech_25" class="feature-button">
-    <h3>FlowTech</h3>
-    <p>A tech startup based on creating and innovating projects that can change the world for the better.</p>
-  </a>
-
-  <a href="https://github.com/Ferr220?tab=repositories" class="feature-button">
-    <h3>Git Repositories</h3>
-    <p>Get full access to all my GitHub repositories.</p>
-  </a>
-</section>
-
-    <footer>
-      <div style="max-width:800px;margin:0 auto">© 2025 Flow Tech • Made with purpose </div>
-    </footer>
-  </div>
+  <footer class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="label contact__label">Contact</h2>
+      <p class="contact__heading">Have a role or a project in mind? Let's talk.</p>
+      <a class="contact__email" href="mailto:colomboriverafernandojose22@gmail.com">colomboriverafernandojose22@gmail.com</a>
+      <ul class="contact__links">
+        <li><a href="tel:+19392463434">+1 (939) 246-3434</a></li>
+        <li><a href="https://github.com/Ferr220">GitHub</a></li>
+        <li><a href="https://www.instagram.com/flowtech_25">FlowTech on Instagram</a></li>
+        <li><a href="Work%20Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
+      </ul>
+      <p class="contact__legal">© 2026 Fernando José Colombo Rivera</p>
+    </div>
+  </footer>
 </body>
 </html>
