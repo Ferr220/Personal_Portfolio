@@ -5,7 +5,7 @@
 
   var ES = {
     skip: "Saltar al contenido",
-    brand: "Portfolio personal",
+    brand: "Portafolio personal",
     navLabel: "Navegación principal",
     work: "Proyectos",
     experience: "Experiencia",
