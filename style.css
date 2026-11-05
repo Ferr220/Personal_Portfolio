@@ -203,7 +203,7 @@ h1 {
   color: var(--on-accent);
 }
 
-/* Crops the source photo to the face and hides the car interior. */
+/* Crops the source photo to the face. */
 .portrait {
   position: relative;
   aspect-ratio: 2 / 3;
@@ -218,14 +218,6 @@ h1 {
   width: 127.9%;
   max-width: none;
   height: auto;
-  filter: grayscale(1) contrast(1.05);
-}
-
-.portrait::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(145deg, #15171c 0%, rgba(21, 23, 28, 0.75) 14%, rgba(21, 23, 28, 0) 34%);
 }
 
 /* ========================================
